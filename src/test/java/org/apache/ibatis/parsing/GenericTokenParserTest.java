@@ -38,6 +38,10 @@ public class GenericTokenParserTest {
     }
   }
 
+  /**
+   * 替换开闭字符之间的内容
+   */
+
   @Test
   public void shouldDemonstrateGenericTokenReplacement() {
     GenericTokenParser parser = new GenericTokenParser("${", "}", new VariableTokenHandler(new HashMap<String, String>() {
